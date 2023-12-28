@@ -8,35 +8,41 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI storytelling-generator</title>
   </head>
-  <body>
+  <body
+    background="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/482/original/mike-erskine-S_VbdMTsdiA-unsplash.jpg?1703762727"
+  >
     <div class="container">
       <header>
         <h1>AI Storytelling generator</h1>
       </header>
-      <p></p>
       <main>
-        <form id="story-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a topic for your story"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions-topic"
-          />
-          <input
-            type="text"
-            placeholder="Name one or two characters"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions-character"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div id="story" class="story">Once upon a time...</div>
+        <div class="form-container">
+          <form id="story-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a topic for your story"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions-topic"
+            />
+            <input
+              type="text"
+              placeholder="Name one character"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions-character"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            i.e: Rain & Ant / Bicycle & Child / River & Elefant
+          </div>
+        </div>
+        <div class="story hidden" id="story">⏳ Once upon a time...</div>
       </main>
       <footer>
         This AI project was coded by
